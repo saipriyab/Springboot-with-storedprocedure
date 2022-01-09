@@ -1,0 +1,12 @@
+CREATE PROCEDURE `getTickets` ()
+BEGIN
+select * from Ticket
+END
+
+*************************
+
+CREATE PROCEDURE `getTicketsByCategory` (in tcategory varchar(10))
+BEGIN
+select * from Ticket where category=tcategory;
+END
+
